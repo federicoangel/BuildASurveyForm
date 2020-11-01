@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/fav-icon.jpg" type="image/jpg" />
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Festivales Musicales</h1>
+        <p id="description">Responda las siguientes preguntas según sus gustos y experiencia</p>
+    </header>
+    <div class="formPosition">
+        <form id="survey-form">
+            <div>
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombres</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese sus nombres"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="lastname-label" for="name">Apellidos</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control"
+                        placeholder="Ingrese sus apellidos" required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su Email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Edad<span class="clue"> (Opcional)</span></label>
+                    <input type="number" name="age" id="number" min="18" max="99" class="form-control"
+                        placeholder="Ingrese su edad" />
+                </div>
+            </div>
+
+            <div>
+                <div class="form-group">
+                    <p>¿Qué género musical prefiere?</p>
+                    <select id="dropdown" name="genderMusic" class="form-control" required>
+                        <option disabled selected value>Seleccione</option>
+                        <option value="rock">Rock</option>
+                        <option value="salsa">Salsa</option>
+                        <option value="reggaeton">Reggaetón</option>
+                        <option value="vallenato">Vallenato</option>
+                        <option value="merengue">Merengue</option>
+                        <option value="romantica">Romántica</option>
+                        <option value="guasca">Guasca</option>
+                        <option value="electronica">Electrónica</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>¿Asistiría a un festival donde se presenten agrupaciones de diferentes generos musicales?</p>
+                    <label><input name="wouldAttend" value="si" type="radio" class="input-radio" checked />Si</label>
+                    <label><input name="wouldAttend" value="posiblente" type="radio"
+                            class="input-radio" />Posiblente</label>
+                    <label><input name="wouldAttend" value="depronto" type="radio"
+                            class="input-radio" />Depronto</label>
+                    <label><input name="wouldAttend" value="no estoy seguro" type="radio" class="input-radio" />No
+                        estoy seguro</label>
+                    <label><input name="wouldAttend" value="no" type="radio" class="input-radio" />No</label>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        ¿Qué generos deberían estar presentes para usted asistir a un festival?
+                        <span><small>(Seleccione los géneros deseados)</small></span>
+                    </p>
+                    <label>
+                        <input name="gender" value="rock" type="checkbox" class="input-checkbox" />Rock
+                    </label>
+                    <label>
+                        <input name="gender" value="salsa" type="checkbox" class="input-checkbox" />Salsa
+                    </label>
+                    <label>
+                        <input name="gender" value="reggaeton" type="checkbox" class="input-checkbox" />Reggaetón
+                    </label>
+                    <label>
+                        <input name="gender" value="vallenato" type="checkbox" class="input-checkbox" />Vallenato
+                    </label>
+                    <label>
+                        <input name="gender" value="merengue" type="checkbox" class="input-checkbox" />Merengue
+                    </label>
+                    <label>
+                        <input name="gender" value="romantica" type="checkbox" class="input-checkbox" />Romántica
+                    </label>
+                    <label>
+                        <input name="gender" value="guasca" type="checkbox" class="input-checkbox" />Guasca
+                    </label>
+                    <label>
+                        <input name="gender" value="electronica" type="checkbox" class="input-checkbox" />Electrónica
+                    </label>
+                    <label>
+                        <input name="gender" value="parrandera" type="checkbox" class="input-checkbox" />Parrandera
+                    </label>
+                    <label>
+                        <input name="gender" value="protesta" type="checkbox" class="input-checkbox" />Protesta
+                    </label>
+                    <label>
+                        <input name="gender" value="rap" type="checkbox" class="input-checkbox" />Rap
+                    </label>
+                    <label>
+                        <input name="gender" value="reggae" type="checkbox" class="input-checkbox" />Reggae
+                    </label>
+                    <label>
+                        <input name="gender" value="otro" type="checkbox" class="input-checkbox" />Otro
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <div class="form-group">
+                    <p>¿Tiene algún comentario o sugerencia?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Ingrese aquí su comentario o sugerencia..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="btnEnviar">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
